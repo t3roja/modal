@@ -24,7 +24,7 @@ export default function App() {
               <Pressable
                 style={styles.button}
                 onPress={() => {setModalVisible(!modalVisible)}}>
-                  <Text style={styles.textStyle}>Hide Modal</Text>
+                  <Text style={styles.textStyle}>Close</Text>
                 </Pressable>
             </View>
           </View>
@@ -52,7 +52,6 @@ const styles = StyleSheet.create({
     backgroundColor: 'white',
     borderRadius: 20,
     padding: 35,
-    alignItems: 'center',
     shadowColor: '#000',
     width: '100%',
     shadowOffset: {
@@ -65,18 +64,20 @@ const styles = StyleSheet.create({
   },
   button: {
     borderRadius: 20,
-    padding: 10,
+    padding: 16,
     elevation: 2,
     color: 'white',
     backgroundColor: 'blue'
   },
   textStyle: {
+    fontSize: 18,
     color: 'white',
     fontWeight: 'bold',
     textAlign: 'center',
   },
   modalText: {
-    marginBottom: 15,
+    fontSize: 24,
+    marginBottom: 16,
     textAlign: 'center',
   },
 });
